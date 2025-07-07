@@ -1,0 +1,124 @@
+
+html, body {
+    font-family: 'Montserrat';
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product-image{
+    object-fit:contain;
+    width: 50%;
+    height: 100%;
+}
+
+
+.card-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.product-details {
+    padding-inline-start: 2em;
+    width: 60%;
+}
+
+.product-type {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-size: 14px
+}
+
+.product-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 0.5em;
+}
+
+.product-description {
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.current-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: hsl(158, 36%, 37%);
+}
+
+.previous-price {
+    font-size: 14px;
+    line-height: 20px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-inline-start: 2em;
+}
+
+.add-to-cart-button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 0.5em 0em;
+    border-radius: 5px;
+    margin-block-start: 0.5em;
+    width: 90%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1088px) {
+    .card-container {
+        max-width: 75%;
+    }
+
+    .product-details {
+        padding-inline-start: 1em;
+    }
+
+    
+}
+
+@media screen and (max-width: 680px) {
+    .card-container {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 1em
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-details {
+        width: 90%;
+        padding: 1em;
+    }
+
+    .add-to-cart-button {
+        width: 100%;
+    }
+    
+}
